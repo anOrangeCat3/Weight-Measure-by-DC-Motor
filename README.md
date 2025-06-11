@@ -2,6 +2,13 @@
 
 This project was a weight measurement project with a range of 100g to 1.5kg, and the premise was not to use traditional weight sensors, such as strain gauges.
 
+The project is shown as following:
+
+<div align=center>
+<img src="https://github.com/anOrangeCat1/projects_sustech/assets/99580008/90598a63-a220-4ba8-bf82-85281c23a164"  />
+</div>
+
+
 **_video link:_**
 
 _youtube:_ https://www.youtube.com/watch?v=4rZR-NxtF5Q
@@ -14,7 +21,7 @@ I wanted to use a motor for weight measurement and utilized Arduino as controlle
 I employed the principle of **torque balance**. When the motor lifts the weight to a horizontal position, it is balanced in my hand, and the torque exerted by the motor equals the torque produced by the weight.The process is illustrated in the following diagram:
 
 <div align=center>
-<img src="https://github.com/anOrangeCat1/projects_sustech/assets/99580008/cc83fe9c-b649-4e13-859e-d2b9e765320e"  />
+<img src="https://github.com/anOrangeCat1/projects_sustech/assets/99580008/cc83fe9c-b649-4e13-859e-d2b9e765320e" width="65%" />
 </div>
 
 When the torque is balanced, **$\tau$ = MgL**, where $\tau$ represents the motor's torque, **M** is the mass of the object to be measured, **g** is the acceleration due to gravity, and **L** is the length of the lever. $\tau$ can be considered proportional to the motor current, **g** is known, and **L** is known, so we can get: **M = $\tau$/gL**. Therefore, through calibration, we can deduce the mass of the object.
@@ -40,11 +47,6 @@ After completing the motor position control, I used a known mass weight to **cal
 </div>
 
 In the end, this new sensor exhibits excellent performance: measurement error within 2%, response time within 5s, and calibration data indicating a near-linear relationship between input and output.
-The final project is shown as following:
-
-<div align=center>
-<img src="https://github.com/anOrangeCat1/projects_sustech/assets/99580008/90598a63-a220-4ba8-bf82-85281c23a164"  />
-</div>
 
 
 
